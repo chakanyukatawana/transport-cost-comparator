@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAFAFA">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- TOP NAVIGATION BAR -->
+        <LinearLayout
+            android:id="@+id/navBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="60dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:background="#004DE6"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp">
+
+            <TextView
+                android:id="@+id/navHome"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/home"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:focusable="true" />
+
+            <TextView
+                android:id="@+id/navDetails"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/details"
+                android:textColor="#FFFFFF"
+                android:gravity="center"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:focusable="true" />
+
+            <TextView
+                android:id="@+id/navReport"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/report"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:focusable="true" />
+
+            <TextView
+                android:id="@+id/navHelp"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:text="?"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:gravity="center"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:focusable="true" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="28dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/transport_report"
+                android:textSize="21sp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:gravity="center"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="35dp" />
+
+            <TextView
+                android:id="@+id/txtModeResult"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/mode_of_transport"
+                android:textSize="17sp"
+                android:layout_marginBottom="15dp" />
+
+            <TextView
+                android:id="@+id/txtTypeResult"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/transport_type"
+                android:textSize="17sp"
+                android:layout_marginBottom="15dp" />
+
+            <TextView
+                android:id="@+id/txtDailyCost"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/daily_transport_cost"
+                android:textSize="17sp"
+                android:layout_marginBottom="15dp" />
+
+            <TextView
+                android:id="@+id/txtMonthlyCost"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/monthly_transport_cost"
+                android:textSize="17sp"
+                android:layout_marginBottom="15dp" />
+
+            <TextView
+                android:id="@+id/txtMonthlyDistance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/monthly_distance_travelled"
+                android:textSize="17sp"
+                android:layout_marginBottom="15dp" />
+
+            <TextView
+                android:id="@+id/txtCategory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/transport_cost_category"
+                android:textSize="17sp"
+                android:layout_marginBottom="25dp" />
+
+            <TextView
+                android:id="@+id/txtRecommendation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/recommendation"
+                android:textSize="17sp"
+                android:layout_marginBottom="40dp" />
+
+            <Button
+                android:id="@+id/btnCalculateAgain"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/calculate_again"
+                android:textAllCaps="false"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/btnExit"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/exit"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="30dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

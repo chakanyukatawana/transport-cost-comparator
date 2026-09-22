@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAFAFA">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- TOP NAVIGATION BAR -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:background="#004DE6"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp">
+
+            <TextView
+                android:id="@+id/navHome"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/home"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:clickable="true"
+                android:focusable="true" />
+
+            <TextView
+                android:id="@+id/navDetails"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/details"
+                android:textColor="#FFFFFF"
+                android:gravity="center"
+                android:clickable="true"
+                android:focusable="true" />
+
+            <TextView
+                android:id="@+id/navReport"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/report"
+                android:textColor="#FFFFFF"
+                android:gravity="center"
+                android:clickable="true"
+                android:focusable="true" />
+
+            <TextView
+                android:id="@+id/navHelp"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:text="@string/help_icon"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:gravity="center"
+                android:clickable="true"
+                android:focusable="true" />
+
+        </LinearLayout>
+
+        <!-- INPUT CONTENT -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="28dp">
+
+            <TextView
+                android:id="@+id/txtInputTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/input_title"
+                android:textSize="21sp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:gravity="center"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="30dp" />
+
+            <EditText
+                android:id="@+id/edtModeTransport"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_mode"
+                android:inputType="text"
+                android:padding="15dp"
+                android:layout_marginBottom="15dp" />
+
+            <EditText
+                android:id="@+id/edtDistance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_distance"
+                android:inputType="numberDecimal"
+                android:padding="15dp"
+                android:layout_marginBottom="15dp" />
+
+            <EditText
+                android:id="@+id/edtCostPerKm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_cost"
+                android:inputType="numberDecimal"
+                android:padding="15dp"
+                android:layout_marginBottom="15dp" />
+
+            <!-- DATE PICKER FIELD -->
+
+            <EditText
+                android:id="@+id/edtTravelDays"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_dates"
+                android:focusable="false"
+                android:clickable="true"
+                android:cursorVisible="false"
+                android:padding="15dp"
+                android:layout_marginBottom="20dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/transport_type"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:layout_marginBottom="8dp" />
+
+            <Spinner
+                android:id="@+id/spinnerTransportType"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginBottom="30dp" />
+
+            <Button
+                android:id="@+id/btnCalculate"
+                android:layout_width="230dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/calculate_save"
+                android:textAllCaps="false"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/btnClear"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/clear"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="30dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAFAFA">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- BLUE NAVIGATION BAR -->
+
+        <LinearLayout
+            android:id="@+id/navBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="60dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:background="#004DE6">
+
+            <TextView
+                android:id="@+id/navHome"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/home"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:focusable="true" />
+
+            <TextView
+                android:id="@+id/navDetails"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/details"
+                android:textColor="#FFFFFF"
+                android:gravity="center"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:focusable="true" />
+
+            <TextView
+                android:id="@+id/navReport"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/report"
+                android:textColor="#FFFFFF"
+                android:gravity="center"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:focusable="true" />
+
+            <TextView
+                android:id="@+id/navHelp"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:text="@string/help_icon"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:gravity="center"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:focusable="true" />
+
+        </LinearLayout>
+
+
+        <!-- MAIN CONTENT -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:padding="30dp">
+
+            <TextView
+                android:id="@+id/txtTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/transport_cost_comparator"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:layout_marginTop="60dp" />
+
+            <TextView
+                android:id="@+id/txtWelcome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/welcome_msg"
+                android:textSize="16sp"
+                android:textColor="#000000"
+                android:layout_marginTop="35dp" />
+
+            <TextView
+                android:id="@+id/txtSpeaker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/speaker_icon"
+                android:textSize="42sp"
+                android:layout_marginTop="45dp" />
+
+            <Button
+                android:id="@+id/btnListen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/listen_to_me"
+                android:textAllCaps="false" />
+
+            <TextView
+                android:id="@+id/txtEstimate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/estimate_msg"
+                android:textColor="#00A9C9"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:layout_marginTop="50dp" />
+
+            <Button
+                android:id="@+id/btnStart"
+                android:layout_width="230dp"
+                android:layout_height="wrap_content"
+                android:text="@string/start_calculation"
+                android:textSize="18sp"
+                android:textAllCaps="false"
+                android:layout_marginTop="100dp" />
+
+            <Button
+                android:id="@+id/btnExit"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="@string/exit"
+                android:textSize="18sp"
+                android:textAllCaps="false"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="30dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
